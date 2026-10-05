@@ -1,97 +1,57 @@
 # Smart Route Finder
 
-A C++ DSA project that models locations as a weighted graph and finds the shortest route between two locations.
+A simple C++ project that uses Data Structures and Algorithms to find routes between different locations.
 
-## Why this project?
+The project represents locations as a graph and uses Dijkstra's Algorithm to find the shortest route based on distance. It also uses BFS to find a route with the minimum number of connections.
 
-This project demonstrates practical use of core Data Structures and Algorithms rather than implementing isolated problems.
-
-## DSA Concepts Used
-
-- **Graph** - represents locations and routes
-- **Adjacency List** - stores connected locations efficiently
-- **Dijkstra's Algorithm** - finds the minimum-distance route
-- **Priority Queue / Min Heap** - efficiently selects the next closest location
-- **BFS** - calculates the minimum number of connections
-- **Hash Map (`unordered_map`)** - provides fast location lookup
-- **Path Reconstruction** - rebuilds the actual shortest route using parent pointers
-- **Sorting** - makes network output easier to read
+I built this project to understand how graph algorithms can be used in a practical problem instead of only solving individual DSA questions.
 
 ## Features
 
-1. Find the shortest route between two locations
-2. Display total distance
-3. Display the route step-by-step
-4. Display number of connections
-5. Add custom routes while the program is running
-6. Display the complete network
+- Find the shortest route between two locations
+- Calculate the total distance
+- Show the complete route step-by-step
+- Show the number of connections/stops
+- Add new locations while the program is running
+- Add new routes with custom distances
+- Display the complete network
+- Compare BFS and Dijkstra
+- Display network statistics
+- Reconstruct and display the actual path taken
+
+## DSA Concepts Used
+
+### Graph
+
+Locations are represented as vertices and routes between them are represented as edges.
+
+### Adjacency List
+
+An adjacency list is used to store the routes connected to each location.
+
+### Dijkstra's Algorithm
+
+Dijkstra's Algorithm is used to find the route with the minimum total distance.
+
+### Priority Queue
+
+A min-heap priority queue is used by Dijkstra's Algorithm to process the closest location first.
+
+### BFS
+
+Breadth-First Search is used to find a route with the minimum number of connections.
+
+### Hash Map
+
+`unordered_map` is used for storing and quickly finding locations in the graph.
+
+### Path Reconstruction
+
+Parent information is stored while searching so the program can rebuild the complete route from the destination back to the starting location.
 
 ## Example
 
-For:
-
-`College -> Railway Station`
-
-The program may produce:
+For example, if we search for a route from:
 
 ```text
-Distance: 12 km
-Route: College -> Hostel -> Sports Ground -> Main Gate -> Bus Stop -> Railway Station
-Connections: 5
-```
-
-## Complexity
-
-For Dijkstra using an adjacency list and binary min-heap:
-
-- Time: **O((V + E) log V)**
-- Space: **O(V + E)**
-
-Where:
-- `V` = number of locations
-- `E` = number of routes
-
-BFS:
-
-- Time: **O(V + E)**
-- Space: **O(V)**
-
-## How to Run
-
-### Windows with MinGW
-
-Open a terminal inside the project folder:
-
-```bash
-g++ -std=c++17 src/main.cpp -o SmartRouteFinder
-SmartRouteFinder.exe
-```
-
-### Linux / macOS
-
-```bash
-g++ -std=c++17 src/main.cpp -o SmartRouteFinder
-./SmartRouteFinder
-```
-
-## Suggested GitHub Repository Name
-
-`smart-route-finder-dsa`
-
-## CV Description
-
-**Smart Route Finder — C++ / Data Structures & Algorithms**
-
-- Built a graph-based route optimization system using adjacency lists and Dijkstra's shortest-path algorithm.
-- Implemented a priority queue, hash maps, BFS, and path reconstruction to efficiently calculate and display optimal routes.
-- Added dynamic route creation and network visualization through a command-line interface.
-- Applied time and space complexity analysis to evaluate algorithm performance.
-
-## Future Improvements
-
-- Add a graphical map interface
-- Import locations from CSV/JSON
-- Add traffic weights
-- Add A* pathfinding
-- Compare Dijkstra vs BFS vs A*
-- Store route history
+College

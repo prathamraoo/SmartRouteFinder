@@ -109,14 +109,14 @@ Linux / macOS
 g++ -std=c++17 src/main.cpp -o SmartRouteFinder
 ./SmartRouteFinder
 Project Structure
-SmartRouteFinder/
+SmartRouteFinder
 ├── src/
 │   └── main.cpp
 ├── README.md
 ├── sample_output.txt
 ├── route-comparison.png
 └── .gitignore
-<img width="831" height="524" alt="route-comparison png" src="https://github.com/user-attachments/assets/9ce797ab-e900-423c-8c09-ed60ac9a9ca1" />
+![BFS vs Dijkstra comparison](route-comparison.png)
 
 What I Learned
 

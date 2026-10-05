@@ -1,0 +1,15 @@
+# Build files
+*.exe
+*.out
+*.o
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+*.exe
+main_v1.cpp

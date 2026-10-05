@@ -1,0 +1,12 @@
+SMART ROUTE FINDER - DSA
+
+Enter choice: 1
+
+Enter starting location: College
+Enter destination: Railway Station
+
+========== SHORTEST ROUTE ==========
+Distance: 12 km
+Route: College -> Hostel -> Sports Ground -> Main Gate -> Bus Stop -> Railway Station
+Connections: 5
+=====================================

@@ -116,6 +116,8 @@ SmartRouteFinder/
 ├── sample_output.txt
 ├── route-comparison.png
 └── .gitignore
+<img width="831" height="524" alt="route-comparison png" src="https://github.com/user-attachments/assets/9ce797ab-e900-423c-8c09-ed60ac9a9ca1" />
+
 What I Learned
 
 This project helped me understand graphs much better because I could actually see the algorithms working instead of only solving questions on paper.
